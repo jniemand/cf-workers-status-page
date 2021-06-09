@@ -1,6 +1,6 @@
 settings:
   title: 'Digicall - Systems Status'
-  url: 'https://status.digicallsa.workers.dev/' # used for Slack messages
+  url: 'https://status.digicallco.za/' # used for Slack messages
   logo: digicall-logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -16,23 +16,30 @@ settings:
 
 monitors:
   - id: smartswitch-digicall-co-za # unique identifier
-    name: smartswitch.digicall.co.za
-    description: 'Digicall SA Smartswitch' # default=empty
+    name: 'SmartSwitch API Server'
+    description: 'smartswitch.digicall.co.za' # default=empty
     url: 'https://smartswitch.digicall.co.za/services/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: www-digicallgroup-co-za
-    name: www.digicallgroup.co.za
-    description: 'Digicall SA Website'
+    name: 'Digicall Group Website'
+    description: 'www.digicallgroup.co.za'
     url: 'https://www.digicallgroup.co.za'
     method: GET
     expectStatus: 200
 
   - id: intranet-digicallgroup-co-za
-    name: intranet.digicallgroup.co.za
+    name: 'Digicall Group Intranet'
     description: 'Digicall Group Intranet'
     url: 'https://intranet.digicallgroup.co.za/welcome'
+    method: GET
+    expectStatus: 200
+
+  - id: www-digicall-co-za-dpsweb2
+    name: 'Digicall DPS Web'
+    description: 'Digicall DPS Web Application'
+    url: 'https://www.digicall.co.za/DPSWeb2/Home/Logon'
     method: GET
     expectStatus: 200
