@@ -1,6 +1,6 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: 'Digicall Status Page'
+  url: 'https://status.digicallsa.workers.dev/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,23 +15,24 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: smartswitch-digicall-co-za # unique identifier
+    name: smartswitch.digicall.co.za
+    description: 'Digicall SA Smartswitch' # default=empty
+    url: 'https://smartswitch.digicall.co.za/services/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: www-digicallgroup-co-za
+    name: www.digicallgroup.co.za
+    description: 'Digicall SA Website'
+    url: 'https://www.digicallgroup.co.za'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: intranet-digicallgroup-co-za
+    name: intranet.digicallgroup.co.za
+    description: 'Digicall Group Intranet'
+    url: 'https://intranet.digicallgroup.co.za/welcome'
     method: GET
     expectStatus: 200
