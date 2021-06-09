@@ -32,14 +32,21 @@ monitors:
 
   - id: intranet-digicallgroup-co-za
     name: 'Digicall Group Intranet'
-    description: 'Digicall Group Intranet'
+    description: 'intranet.digicallgroup.co.za'
     url: 'https://intranet.digicallgroup.co.za/welcome'
     method: GET
     expectStatus: 200
 
   - id: www-digicall-co-za-dpsweb2
-    name: 'Digicall DPS Web'
-    description: 'Digicall DPS Web Application'
+    name: 'Digicall DPS Web Application'
+    description: 'www.digicall.co.za/DPSWeb2'
     url: 'https://www.digicall.co.za/DPSWeb2/Home/Logon'
+    method: GET
+    expectStatus: 200
+
+  - id: www-digistore-africa
+    name: 'Digicall eCommerce (digistore.africa)'
+    description: 'www.digistore.africa'
+    url: 'https://www.digistore.africa'
     method: GET
     expectStatus: 200
