@@ -50,3 +50,10 @@ monitors:
     url: 'https://www.digistore.africa'
     method: GET
     expectStatus: 200
+
+  - id: mta-cluster-digicallgroup-co-za
+    name: 'Digicall MTA Cluster'
+    description: 'mta-cluster.digicallgroup.co.za'
+    url: 'http://mta-cluster.digicallgroup.co.za'
+    method: GET
+    expectStatus: 200
