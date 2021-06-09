@@ -1,5 +1,5 @@
 settings:
-  title: 'Digicall - Systems Status'
+  title: 'Digicall South Africa - Systems Status'
   url: 'https://status.digicallco.za/' # used for Slack messages
   logo: digicall-logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -47,13 +47,7 @@ monitors:
   - id: www-digistore-africa
     name: 'eCommerce: digistore.africa'
     description: 'www.digistore.africa'
-    url: 'https://www.digistore.africa'
+    url: 'https://www.digistore.africa/'
     method: GET
     expectStatus: 200
-
-  - id: mta-cluster-digicallgroup-co-za
-    name: 'Mail Cluster'
-    description: 'mta-cluster.digicallgroup.co.za'
-    url: 'http://mta-cluster.digicallgroup.co.za'
-    method: GET
-    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
