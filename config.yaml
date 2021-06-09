@@ -1,5 +1,5 @@
 settings:
-  title: 'Digicall South Africa - Systems Status'
+  title: 'Digicall SA - Systems Status'
   url: 'https://status.digicallco.za/' # used for Slack messages
   logo: digicall-logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
