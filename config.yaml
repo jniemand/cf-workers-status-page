@@ -58,7 +58,7 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: www-izinga-com
+- id: id: www-izinga-com
     name: 'Legal Portal'
     description: 'www.izinga.com'
     url: 'https://www.izinga.com'
