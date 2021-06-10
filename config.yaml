@@ -51,13 +51,6 @@ monitors:
     method: GET
     expectStatus: 200
 
-- id: www-digistore-africa
-    name: 'eCommerce: digistore.africa'
-    description: 'www.digistore.africa'
-    url: 'https://www.digistore.africa'
-    method: GET
-    expectStatus: 200
-
   - id: www-izinga-com
     name: 'Legal Portal'
     description: 'www.izinga.com'
