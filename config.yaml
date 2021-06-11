@@ -18,7 +18,7 @@ monitors:
   - id: smartswitch-digicall-co-za # unique identifier
     name: 'SmartSwitch API Server'
     description: 'smartswitch.digicall.co.za' # default=empty
-    url: 'https://smartswitch.digicall.co.za/services/' # URL to fetch
+    url: 'https://smartswitch.digicall.co.za/services?statuscheck' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -26,28 +26,28 @@ monitors:
   - id: www-digicallgroup-co-za
     name: 'Digicall Group Website'
     description: 'www.digicallgroup.co.za'
-    url: 'https://www.digicallgroup.co.za'
+    url: 'https://www.digicallgroup.co.za/?statuscheck'
     method: GET
     expectStatus: 200
 
   - id: intranet-digicallgroup-co-za
     name: 'Digicall Group Intranet'
     description: 'intranet.digicallgroup.co.za'
-    url: 'https://intranet.digicallgroup.co.za/welcome'
+    url: 'https://intranet.digicallgroup.co.za/welcome?statuscheck'
     method: GET
     expectStatus: 200
 
   - id: www-digicall-co-za-dpsweb2
     name: 'DPS Web'
     description: 'www.digicall.co.za/DPSWeb2'
-    url: 'https://www.digicall.co.za/DPSWeb2/Home/Logon'
+    url: 'https://www.digicall.co.za/DPSWeb2/Home/Logon?statuscheck'
     method: GET
     expectStatus: 200
 
   - id: www-digicallsouthafrica-co-za
     name: 'DSA Web'
     description: 'www.digicallsouthafrica.co.za'
-    url: 'https://www.digicallsouthafrica.co.za/Web/Default.aspx'
+    url: 'https://www.digicallsouthafrica.co.za/Web/Default.aspx?statuscheck'
     method: GET
     expectStatus: 200
     
@@ -61,6 +61,6 @@ monitors:
   - id: www-izinga-com
     name: 'Legal Portal'
     description: 'www.izinga.com'
-    url: 'https://www.izinga.com'
+    url: 'https://www.izinga.com/?statuscheck'
     method: GET
     expectStatus: 200
