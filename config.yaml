@@ -54,7 +54,7 @@ monitors:
   - id: www-digistore-africa
     name: 'eCommerce: digistore.africa'
     description: 'www.digistore.africa'
-    url: 'https://www.digistore.africa'
+    url: 'https://www.digistore.africa/my-account/?statuscheck'
     method: GET
     expectStatus: 200
 
